@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="center">
+        <h1>Weather in {{ city }}</h1>
+        {% if weather %}
+        <div class="weather-info">
+            <img src="http://openweathermap.org/img/wn/{{ weather['icon'] }}@2x.png" alt="Weather Icon">
+            <p>{{ weather['description'] }}</p>
+            <p>Temperature: {{ weather['temperature'] }}°C</p>
+            <p>Humidity: {{ weather['humidity'] }}%</p>
+            <p>Wind Speed: {{ weather['wind_speed'] }} m/s</p>
+            <p>Clouds: {{ weather['clouds'] }}%</p>
+
+        </div>
+        {% else %}
+        <p>Upss! Could not retrieve weather data for {{ city }}</p>
+        {% endif %}
+
+        <form action="/" method="get">
+            <input type="text" name="city" placeholder="Enter city">
+            <button type="submit">Get Weather</button>
+        </form>
+    </div>
+</body>
+
+</html>

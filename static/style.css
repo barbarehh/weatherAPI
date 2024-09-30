@@ -1,0 +1,131 @@
+body {
+    background: linear-gradient(to bottom, #54b5f2, #fffffd);
+    height: 100vh;
+    /* Set height to cover full viewport */
+    margin: 0;
+    /* Remove default margin */
+    display: flex;
+    /* Use flexbox layout */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.center {
+    display: flex;
+    /* Enable Flexbox for the inner content */
+    flex-direction: column;
+    /* Stack children vertically */
+    justify-content: center;
+    /* Center children vertically */
+    align-items: center;
+    /* Center children horizontally */
+    width: 50%;
+    /* Sets the width of the centered div to 50% of the viewport */
+    border: 3px solid rgb(22, 50, 101);
+    /* Creates a solid border with a dark blue color */
+    padding: 50px;
+    /* Adds space inside the div */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Adds a soft shadow */
+    color: #020202;
+    /* Text color for readability */
+    transition: border-color 0.3s;
+    /* Smooth transition for hover effect */
+    text-align: center;
+    /* Center text horizontally */
+    font-size: 1rem;
+    /* Increase the base font size (e.g., 1.5rem) */
+    /* background-color: #afccee; argvinda*/
+    /* Add a light background color with opacity */
+    border-radius: 10px;
+    /* Optional: Add rounded corners */
+}
+
+
+.center h1 {
+    /* Larger font size for h1 elements */
+    font-size: 2rem;
+    color: #000;
+    font: bold;
+}
+
+.weather-info img {
+    width: 120px;
+    /* Adjust the width of the weather icon */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+button {
+    background-color: rgb(22, 50, 101);
+    /* Button background color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* Remove default border */
+    border-radius: 20px;
+    /* Rounded corners */
+    padding: 10px 15px;
+    /* Vertical and horizontal padding */
+    font-size: 1rem;
+    /* Font size */
+    cursor: pointer;
+    /* Change cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: rgb(24, 154, 198);
+    /* Darker shade on hover */
+}
+
+
+
+input[type="text"] {
+    width: 100%;
+    /* Make the input full width */
+    padding: 10px;
+    /* Add padding for better spacing */
+    border: 2px solid rgb(22, 50, 101);
+    /* Border color matching the button */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 1rem;
+    /* Font size */
+    color: #333;
+    /* Text color */
+    background-color: #fff;
+    /* Background color */
+    transition: border-color 0.3s;
+    /* Smooth transition for border color */
+    margin-bottom: 15px;
+    /* Add margin at the bottom */
+
+}
+
+input[type="text"]:focus {
+    outline: none;
+    /* Remove the default outline */
+    border-color: rgb(24, 154, 198);
+    /* Change border color when focused */
+    box-shadow: 0 0 5px rgb(14, 71, 91);
+    /* Optional: Add a glow effect */
+}
+
+.center:hover {
+    border-color: rgb(24, 154, 198);
+    /* Change border color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .center {
+        width: 80%;
+        /* Make it wider on smaller screens */
+        font-size: 1.2rem;
+        /* Adjust font size for smaller screens */
+    }
+}
