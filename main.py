@@ -11,7 +11,6 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 # Tell FastAPI where to find the HTML templates (in the "templates" folder)
 templates = Jinja2Templates(directory="templates")
 
-
 # OpenWeatherMap API key (replace with your actual API key)
 API_KEY = ""  # Replace with your OpenWeatherMap API key
 
