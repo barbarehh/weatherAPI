@@ -1,4 +1,4 @@
-#weatherAPI
+# weatherAPI
 
 This is a simple web application built with **FastAPI** that allows users to fetch weather information for a specified city using the OpenWeatherMap API.
 
